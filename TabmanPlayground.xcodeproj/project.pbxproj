@@ -13,6 +13,7 @@
 		C9DECF1B27B4C67100C02A35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9DECF1927B4C67100C02A35 /* Main.storyboard */; };
 		C9DECF1D27B4C67200C02A35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9DECF1C27B4C67200C02A35 /* Assets.xcassets */; };
 		C9DECF2027B4C67200C02A35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9DECF1E27B4C67200C02A35 /* LaunchScreen.storyboard */; };
+		C9DECF2927B4CBED00C02A35 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = C9DECF2827B4CBED00C02A35 /* Tabman */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9DECF2927B4CBED00C02A35 /* Tabman in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = TabmanPlayground;
+			packageProductDependencies = (
+				C9DECF2827B4CBED00C02A35 /* Tabman */,
+			);
 			productName = TabmanPlayground;
 			productReference = C9DECF1027B4C67100C02A35 /* TabmanPlayground.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = C9DECF0727B4C67100C02A35;
+			packageReferences = (
+				C9DECF2727B4CBED00C02A35 /* XCRemoteSwiftPackageReference "Tabman" */,
+			);
 			productRefGroup = C9DECF1127B4C67100C02A35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -360,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9DECF2727B4CBED00C02A35 /* XCRemoteSwiftPackageReference "Tabman" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uias/Tabman";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9DECF2827B4CBED00C02A35 /* Tabman */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9DECF2727B4CBED00C02A35 /* XCRemoteSwiftPackageReference "Tabman" */;
+			productName = Tabman;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9DECF0827B4C67100C02A35 /* Project object */;
 }
